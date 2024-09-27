@@ -1,0 +1,128 @@
+body{
+    background-color: #f0dad2;
+}
+.maincontainer{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.flexbox{
+    background-color:#f0dad2;
+    grid-column: 1;
+    grid-row: 1;
+}
+h1{
+    
+    font-family: "Oleo Script", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    color: maroon;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.playerbox{
+    
+    display: flex;
+    gap: 30px;
+    justify-content: center;/*can chinh cac phan tu con theo chieu ngang*/
+}
+p{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: maroon;
+
+}
+.dicce{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+#image1, #image2{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex; 
+    justify-content: center;
+}
+#button{
+    width: 70px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: indianred;
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    
+}
+#move{
+    width: 200px;
+    height: 50px;
+    border-radius: 20%;
+    margin-left: 20px;
+    background-color: indianred;
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+
+}
+.grid{
+    background-color: #f0dad2
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+.chessboard{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(6,100px);
+    justify-content: center;
+}   
+.black{
+    background-color: brown;
+}
+.white{
+    background-color: black;
+}
+#parent1, #parent2{
+    position: relative;
+}
+#robot1{
+    width: 75px;
+    height: 80px;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+#robot2{
+    width: 75px;
+    height: 80px;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.footer{
+    
+    background-color:#f0dad2 ;
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
